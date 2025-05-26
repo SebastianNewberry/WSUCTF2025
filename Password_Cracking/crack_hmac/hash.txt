@@ -1,0 +1,3 @@
+Hash mode is SHA-1
+
+514458d3f18cdcdce298b7d6773d8699a0100267

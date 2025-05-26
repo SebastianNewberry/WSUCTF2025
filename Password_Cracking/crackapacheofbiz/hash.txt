@@ -1,0 +1,5 @@
+Hash mode is SHA-1
+
+Hash:
+
+$SHA$wsurocks$kNvl-Fy3xwVdq5TpRVPZYTbOTYs
