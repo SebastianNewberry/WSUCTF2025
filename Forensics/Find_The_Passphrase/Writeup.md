@@ -1,9 +1,12 @@
 # 🏴 Find The Passphrase
 
-**Category:** Forensics
-**Points:** 10 pts
-**Author:** Sebastian
-**Description:** Can you reverse engineer this dll to find the passphrase in order to retrieve the flag?
+> **Category:** Forensics  
+>
+> **Points:** 10 pts  
+>
+> **Author:** Sebastian  
+>
+> **Description:** Can you reverse engineer this dll to find the passphrase in order to retrieve the flag?
 
 ---
 
