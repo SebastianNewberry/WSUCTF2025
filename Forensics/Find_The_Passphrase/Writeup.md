@@ -1,9 +1,9 @@
 # 🏴 Find The Passphrase
 
-> **Category:** Forensics
-> **Points:** 10 pts
-> **Author:** Sebastian
-> **Description:** Can you reverse engineer this dll to find the passphrase in order to retrieve the flag?
+**Category:** Forensics
+**Points:** 10 pts
+**Author:** Sebastian
+**Description:** Can you reverse engineer this dll to find the passphrase in order to retrieve the flag?
 
 ---
 
@@ -35,6 +35,6 @@ We know we have the correct passphrase when the if statement that returns from t
 
 If we enter the correct passphrase, we get the decrypted flag:
 
-[Solution](./Solution.png)
+![Solution](./Solution.png)
 
 flag: ```WSUCTF{r3vrsing_CSHarp_3x3cutables}```
