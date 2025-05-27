@@ -32,7 +32,7 @@ If we look at the main function, we see that there is an encrypted flag, and if 
 
 ![Server.dll Main function](./Main.png)
 
-We know we have the correct passphrase when the if statement that returns from the programming is not called. This means that we need to enter the passphrase "WayneStateUniversity"
+We know we have the correct passphrase when the if statement that returns from the program is not called. This means that we need to enter the passphrase "WayneStateUniversity".
 
 ## Solution
 

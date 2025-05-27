@@ -1,8 +1,11 @@
 # 🏴 Crack Apache Ofbiz Hash
 
 > **Category:** Password Cracking
+>
 > **Points:** 15 pts
+>
 > **Author:** Sebastian
+>
 > **Description:** Can you crack this apache ofbiz password hash using rockyou.txt?
 
 ---
@@ -19,6 +22,6 @@ The python script to crack this hash can be found in the solve.py file.
 
 ## Solution
 
-[Solution](./Solution.png)
+![Solution](./Solution.png)
 
 flag: ```WSUCTF{iluvwayne4eva}```

@@ -1,8 +1,11 @@
 # 🏴 Suspicious Web Traffic
 
 > **Category:** Forensics
+>
 > **Points:** 15 pts
+>
 > **Author:** Sebastian
+>
 > **Description:** One of our employees has been surfing the web a lot lately. Can you help us figure out if he is up to anything suspicious?
 
 ---
@@ -89,6 +92,6 @@ Answer: Digitalocean
 
 ## Solution
 
-[flag](./flag.png)
+![flag](./flag.png)
 
 flag: ```WSUCTF{1_am_a_Wireshark_m4ster}```

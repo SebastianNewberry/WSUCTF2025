@@ -1,8 +1,11 @@
 # 🏴 Crack Hmac Hash
 
 > **Category:** Password Cracking
+>
 > **Points:** 15 pts
+>
 > **Author:** Sebastian
+>
 > **Description:** Can you crack this HMAC hash given the key and a wordlist?
 
 ---
@@ -20,6 +23,6 @@ The python script to crack this hash can be found in the solve.py file.
 
 ## Solution
 
-[Solution](./Solution.png)
+![Solution](./Solution.png)
 
 flag: ```WSUCTF{iamahacker}```
