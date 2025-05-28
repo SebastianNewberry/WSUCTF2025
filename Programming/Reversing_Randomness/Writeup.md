@@ -116,4 +116,4 @@ If we run all of this together, we get the flag:
 
 ![Solution](./Solution.png)
 
-flag: ```WSUCTF{iamahacker}```
+flag: ```WSUCTF{r3versing_swaps_WIth_r4ndom_seeds}```
