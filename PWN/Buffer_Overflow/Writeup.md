@@ -28,7 +28,7 @@ This function is vulnerable because it allocates 112 bytes for the user to input
 
 First off, if you aren't very familiar with triggering a exploiting a buffer overflow, the stack grows from high to low memory addresses, and when a function is called like the vuln function in this program, an instruction pointer (rip) and base pointer (rbp) is pushed onto the stack. The end goal in this is to overwrite both, and overwritten rip should point to an address that has some instructions to where you want to return execution of the program. Since our binary has NX disabled, we can return to the stack and execute bytecode on the stack.
 
-After these two are pushed on the stack, any local buffers specific to the function are pushed onto the stack. In this case, we have 112 bytes above the rbp that are reserved for our user input. If we write more than this, we can corrupt the memory because of the vulnerable gets() function.
+After these two are pushed on the stack, any local buffers specific to the function are pushed onto the stack. In this case, we have 112 bytes below the rbp that are reserved for our user input. If we write more than this, we can corrupt the memory because of the vulnerable gets() function.
 
 ```text
 +-----------------------+  <-- High memory addresses

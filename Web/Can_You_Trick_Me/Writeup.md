@@ -2,7 +2,7 @@
 
 > **Category:** Web  
 >
-> **Points:** 20 pts  
+> **Points:** 30 pts  
 >
 > **Author:** Sebastian  
 >
@@ -162,4 +162,4 @@ requests.get(adminbot_url)
 
 ![flag](./flag.png)
 
-flag: ```WSUCTF{Next_t1me_use_pr3pared_st4t3ments_plz}```
+flag: ```WSUCTF{adm1nbot_exfiltration_FTW!!}```

@@ -56,6 +56,8 @@ I did this because unfortunately I wasn't able to get the sql injection to actua
 
 ## Solution
 
+In order to solve this, you must enter a byte between 0xe0-0xff, then followed by a single quote. You don't have to complete the sql injection because the code only checks to see if you correctly prevent pg_escape_string() from escaping the single quote, then fetches the flag.
+
 ![Solution](./Solution.png)
 
 flag: ```WSUCTF{Next_t1me_use_pr3pared_st4t3ments_plz}```

@@ -59,7 +59,7 @@ ASLR is a security feature used in binaries to prevent the kind of attack we are
 
 PIE is another security protection similar to ASLR, but it isn't enabled in this binary. PIE stands for Position Independent Executable, and it randomizes the base address of the functions in our binary. Since these aren't randomized, we don't have to worry about leaking a base address to where our binary is loaded.
 
-**Note: The base addresses of libc and the elf binary change, but the offsets are always the same (Base address of binary doesn't change if PIE is disabled)**
+**Note: The base addresses of libc and the elf binary change, but the offsets are always the same (Base address of binary functions don't change if PIE is disabled)**
 
 In order to leak addresses of libc, the functions that we are trying to leak have to be called first. When a function is called from the libc external library, the address of the function is loaded into the got table. There are some other special tricks to get a vulnerable binary to link a specific libc function to a different one when that function hasn't been called yet, but that is a very complex exploit and needs lots of pre-conditions to be met. This is called ret2dlresolve. Here is a link to a writeup that abuses that:
 
@@ -85,10 +85,13 @@ What you have to do is leak at least 3 libc functions, and put the last 3 digits
 
 ![remote leaks](./remoteleaks.png)
 
-I can enter the last 3 hex characters into the website, because these aren't affected by ASLR.
+I can enter the last 3 hex characters into the website, because these aren't affected by ASLR. This is how you would enter the leaked addresses into the website:
+
+![finding correct libc version](./libcrip.png)
 
 If you download the first one off of the top, then the exploit should work. You know that most likely you have the correct libc version if after leaking the libc address, you have an address that ends in 000.
 
+![download libc](./offsets.png)
 
 **Explaining the solve script**
 

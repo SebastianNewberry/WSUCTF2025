@@ -40,7 +40,7 @@ This means that any string that has either "cat" or "sh" in it will be blocked. 
 
 What I tried doing first is looking for alternatives to using cat to read a file. Typically in jail challenges like this, the flag is in a file, but it could have a completely different name than flag.txt.
 
-My first idea was to use a bash injection to try to cat flag.txt out. Bash injection works by running ````\`\```` or ```$()``` with commands inside. Bash will interpret whatever is inside of those marks as an actual command, and will attempt to execute that command as bash. So if you base64 encode the command, then base64 decode it inside of these bash injecting symbols, you can run the actual command as if it was actual command in the first place.
+My first idea was to use a bash injection to try to cat flag.txt out. Bash injection works by running ````````` or ```$()``` with commands inside. Bash will interpret whatever is inside of those marks as an actual command, and will attempt to execute that command as bash. So if you base64 encode the command, then base64 decode it inside of these bash injecting symbols, you can run the actual command as if it was actual command in the first place.
 
 This is a good writeup on solving a web challenge that uses this type of bash variable interpolation.
 
@@ -105,6 +105,6 @@ grep -r WSUCTF{.*} /
 
 ## Solution
 
-[Solution](./echoSolution.png)
+![Solution](./echoSolution.png)
 
 flag: ```WSUCTF{br34king_0ut_0f_Jai!}```
