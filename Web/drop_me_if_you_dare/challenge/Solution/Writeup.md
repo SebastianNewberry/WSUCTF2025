@@ -20,7 +20,7 @@ SQL injection is one of the most well-known web vulnerabilities and is frequentl
 
 Upon visiting the login page, users are prompted to enter a username and password. 
 
-![Login Page](./images/login-page.png)
+![Login Page](login-page.png)
 
 If you enter incorrect credentials like:
 
@@ -31,7 +31,7 @@ You’ll get a message like:
 
 **Login failed. Try again.**
 
-![Failed Login](./images/failed-login.png)
+![Failed Login](failed-login.png)
 
 
 However, if you inspect the request being sent or guess the server-side logic, you might notice that the login mechanism uses an SQL query that looks like this:
@@ -45,7 +45,7 @@ To exploit it, you can use a classic SQL Injection payload:
 **Username:** `' OR 1=1 -- `
 **Password:** `[anything]`
 
-![Login Attempt](./images/login-attempt.png)
+![Login Attempt](login-attempt.png)
 
 
 The query becomes:
@@ -62,6 +62,6 @@ Enter the following in the login form:
 
 If the injection works, you are redirected to a success page and shown the flag.
 
-![Solution](./images/Solution.png)
+![Solution](Solution.png)
 
 flag: `WSUCTF{SQL_1NJ3CT!0N_5UCCESS!}`
