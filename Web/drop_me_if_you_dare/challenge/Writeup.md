@@ -62,6 +62,6 @@ Enter the following in the login form:
 
 If the injection works, you are redirected to a success page and shown the flag.
 
-![Solution](./images/login-attempt.png)
+![Solution](./images/Solution.png)
 
 flag: `WSUCTF{SQL_1NJ3CT!0N_5UCCESS!}`
